@@ -259,7 +259,7 @@ class CollapsibleCalendar : UICalendar, View.OnClickListener {
             val calendar = Calendar.getInstance()
             val tempDatePattern: String
             if (calendar.get(Calendar.YEAR) != mAdapter.calendar.get(Calendar.YEAR)) {
-                tempDatePattern = "MMMM YYYY"
+                tempDatePattern = "MMMM yyyy"
             } else {
                 tempDatePattern = datePattern
             }
