@@ -38,9 +38,9 @@ class CollapsibleCalendar : UICalendar, View.OnClickListener {
         val today = GregorianCalendar()
         this.selectedItem = null
         this.selectedItemPosition = -1
-        this.selectedDay = Day(today.get(Calendar.YEAR), today.get(Calendar.MONTH), today.get(Calendar.DAY_OF_MONTH))
         mCurrentWeekIndex = suitableRowIndex
         setAdapter(calenderAdapter)
+        select(Day(today.get(Calendar.YEAR), today.get(Calendar.MONTH), today.get(Calendar.DAY_OF_MONTH)))
     }
 
     override fun onClick(view: View?) {
